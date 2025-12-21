@@ -77,9 +77,9 @@ I’m a Computer Science student at the University of Alberta focused on buildin
 
 ## Things I've worked with
 
-<table>
+<table width="100%">
   <tr>
-    <td width="25%" valign="top"><b>Languages</b></td>
+    <td width="22%" valign="top"><b>Languages</b></td>
     <td valign="top">Java, TypeScript, Python, C, JavaScript</td>
   </tr>
   <tr>
@@ -95,3 +95,4 @@ I’m a Computer Science student at the University of Alberta focused on buildin
     <td valign="top">Git, Unix, Azure, CI/CD</td>
   </tr>
 </table>
+
