@@ -72,7 +72,7 @@ I’m a Computer Science student at the University of Alberta focused on buildin
     </td>
   </tr>
 </table>
-
+<br>
 ---
 
 ## Things I've worked with
