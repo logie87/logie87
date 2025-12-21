@@ -74,6 +74,7 @@ I’m a Computer Science student at the University of Alberta focused on buildin
     </td>
   </tr>
 </table>
+
 ---
 
 ## Things I've worked with
