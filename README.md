@@ -76,7 +76,6 @@ I’m a Computer Science student at the University of Alberta focused on buildin
 ---
 
 ## Things I've worked with
-
 <table width="100%">
   <tr>
     <td width="22%" valign="top"><b>Languages</b></td>
