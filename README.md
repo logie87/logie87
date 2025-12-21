@@ -56,6 +56,7 @@ I’m a Computer Science student at the University of Alberta focused on buildin
       <p>
         Focused on improving IEP workflow by centralizing curriculum, learning targets, and reports, and generating assessment/adaptation suggestions to support classroom needs.
       </p>
+      <br>
     </td>
     <td width="50%" valign="top">
       <h3 style="margin-bottom: 6px;">Telesat (Internship)</h3>
@@ -69,10 +70,10 @@ I’m a Computer Science student at the University of Alberta focused on buildin
       <p>
         Built features with an emphasis on reliability, maintainability, and clean integration between frontend and backend systems.
       </p>
+      <br>
     </td>
   </tr>
 </table>
-<br>
 ---
 
 ## Things I've worked with
