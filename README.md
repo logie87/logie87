@@ -23,44 +23,45 @@
 
 ---
 
-## Overview
+## Quick summary
 
-- BSc Computer Science (Honours), University of Alberta
-- Software Engineer Intern @ Telesat (May 2025 – Aug 2025)
-- Built and operated a 3,000+ client tech support + tutoring business
-- Led **Instructive** (natHacks 2025 1st Place): React/TypeScript + Python LLM project for IEP-driven curriculum adaptation
+I’m a Computer Science student at the University of Alberta focused on building practical systems and products. I’ve built projects using Java, TypeScript, and Python — from frontend React work to backend services — Doing my best to build solutions that solve problems I didn't make up in my head.
 
 ---
 
-## Featured
+## Overview
 
-<p align="center">
-  <a href="https://instructive-ui.vercel.app"><b>Instructive (Live)</b></a>
-  &nbsp;·&nbsp;
-  <a href="https://devpost.com/software/instructive"><b>Devpost</b></a>
-</p>
+- 2nd Year BSc Hons Computer Science, University of Alberta
+- Software Engineer Intern @ Telesat (May – Sept 2025) — Ottawa, Ontario
+- Built and operated a 3,000+ client tech support + tutoring business
+- Led **Instructive** (1st Place @ natHacks 2025): React/TypeScript + Python LLM project for IEP-driven curriculum adaptation
 
-<br/>
+---
+
+## A few things I've done
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3>Instructive</h3>
+      <p><b>1st Place @ natHacks 2025</b></p>
       <p>
         Education management system to help teachers adapt curricula to students with IEPs.
         Built with React/TypeScript + Python, integrating a local open-source LLM with RAG.
       </p>
       <p>
-        <a href="https://instructive-ui.vercel.app"><b>Live</b></a>
-        &nbsp;·&nbsp;
-        <a href="https://devpost.com/software/instructive"><b>Devpost</b></a>
+        Focused on improving IEP workflow by centralizing curriculum, learning targets, and reports, and generating assessment/adaptation suggestions to support classroom needs.
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>Telesat (Internship Work)</h3>
+      <h3>Telesat (Internship)</h3>
+      <p><b>May – Sept 2025</b> · Ottawa, Ontario</p>
       <p>
         Re-architected parts of a Constellation Capacity Management System using Java, TypeScript, and React.
         Worked in an Agile Scrum environment with code reviews, CI/CD, and Azure/JFrog-based workflows.
+      </p>
+      <p>
+        Built features with an emphasis on reliability, maintainability, and clean integration between frontend and backend systems.
       </p>
     </td>
   </tr>
@@ -68,7 +69,7 @@
 
 ---
 
-## What I’ve worked with
+## Things I've worked with
 
 <table>
   <tr>
