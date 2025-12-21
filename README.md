@@ -12,23 +12,22 @@
   <a href="https://github.com/logie87"><b>GitHub</b></a>
 </p>
 
+
 <p align="center">
   <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=buymeacoffee&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
   <img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=111" />
-  <img alt="Azure" src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" />
+  <img alt="Azure" src="https://img.shields.io/badge/Azure-Cloud-0078D4?style=flat&logo=microsoftazure&logoColor=white&v=2" />
   <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white" />
   <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
 </p>
-
-
 
 ---
 
 ## A little about me ☕️
 
-I’m a Computer Science student at the University of Alberta focused on building practical systems and products. I’ve built projects using Java, TypeScript, and Python — from frontend React work to backend services — Doing my best to build solutions that solve problems I didn't make up in my head.
+I’m a Computer Science student at the University of Alberta focused on building practical systems and products. I’ve built projects using Java, TypeScript, and Python — from frontend React work to backend services — doing my best to build solutions that solve problems I didn't make up in my head.
 <br>Also I love coffee :&rpar;
 
 ---
@@ -40,17 +39,16 @@ I’m a Computer Science student at the University of Alberta focused on buildin
 - Built and operated a 3,000+ client tech support + tutoring business
 - Led **Instructive** (1st Place @ natHacks 2025): React/TypeScript + Python LLM project for IEP-driven curriculum adaptation
 - Founded a robotics association focused on applied innovation and community engagement to teach robotics to all.
-
 ---
 
 ## A few things I've done
 
-<table>
+<table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3 style="margin-bottom: 6px;">Instructive &nbsp;·&nbsp;<a href="https://devpost.com/software/instructive"><b>Devpost</b></a></h3>
+      <h3 style="margin-bottom: 6px;">Instructive (Project)</h3>
       <p style="margin-top: 0; margin-bottom: 10px;">
-        <sub><b>1st Place @ natHacks Nov 2025</b></sub>
+        <sub><b>1st Place @ natHacks 2025</b></sub>
       </p>
       <p style="margin-top: 10px;">
         Education management system to help teachers adapt curricula to students with IEPs.
@@ -59,7 +57,12 @@ I’m a Computer Science student at the University of Alberta focused on buildin
       <p>
         Focused on improving IEP workflow by centralizing curriculum, learning targets, and reports, and generating assessment/adaptation suggestions to support classroom needs.
       </p>
-      <br>
+      <p style="margin-top: 10px;">
+        <a href="https://instructive-ui.vercel.app"><b>Live</b></a>
+        &nbsp;·&nbsp;
+        <a href="https://devpost.com/software/instructive"><b>Devpost</b></a>
+            <br><sub>Message for a Demo + Login.</sub>
+      </p>
     </td>
     <td width="50%" valign="top">
       <h3 style="margin-bottom: 6px;">Telesat (Internship)</h3>
@@ -73,7 +76,6 @@ I’m a Computer Science student at the University of Alberta focused on buildin
       <p>
         Built features with an emphasis on reliability, maintainability, and clean integration between frontend and backend systems.
       </p>
-      <br>
     </td>
   </tr>
 </table>
@@ -81,6 +83,7 @@ I’m a Computer Science student at the University of Alberta focused on buildin
 ---
 
 ## Things I've worked with
+
 <table width="100%">
   <tr>
     <td width="22%" valign="top"><b>Languages</b></td>
@@ -96,7 +99,10 @@ I’m a Computer Science student at the University of Alberta focused on buildin
   </tr>
   <tr>
     <td valign="top"><b>Platforms</b></td>
-    <td valign="top">Git, Unix, Azure, CI/CD</td>
+    <td valign="top">Git, Unix, Azure, CI/CD, Kubernetes</td>
   </tr>
 </table>
 
+---
+
+<p align="center"><sub>Always happy to chat — especially if coffee is involved.</sub></p>
