@@ -23,18 +23,20 @@
 
 ---
 
-## Quick summary
+## A little about me ☕️
 
 I’m a Computer Science student at the University of Alberta focused on building practical systems and products. I’ve built projects using Java, TypeScript, and Python — from frontend React work to backend services — Doing my best to build solutions that solve problems I didn't make up in my head.
+<br>Also I love coffee :&rpar;
 
 ---
 
-## Overview
+## Those main things resumes have 🔥
 
 - 2nd Year BSc Hons Computer Science, University of Alberta
 - Software Engineer Intern @ Telesat (May – Sept 2025) — Ottawa, Ontario
 - Built and operated a 3,000+ client tech support + tutoring business
 - Led **Instructive** (1st Place @ natHacks 2025): React/TypeScript + Python LLM project for IEP-driven curriculum adaptation
+- Founded a robotics association focused on applied innovation and community engagement to teach robotics to all.
 
 ---
 
@@ -43,9 +45,11 @@ I’m a Computer Science student at the University of Alberta focused on buildin
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Instructive</h3>
-      <p><b>1st Place @ natHacks 2025</b></p>
-      <p>
+      <h3 style="margin-bottom: 6px;">Instructive &nbsp;·&nbsp;<a href="https://devpost.com/software/instructive"><b>Devpost</b></a></h3>
+      <p style="margin-top: 0; margin-bottom: 10px;">
+        <sub><b>1st Place @ natHacks Nov 2025</b></sub>
+      </p>
+      <p style="margin-top: 10px;">
         Education management system to help teachers adapt curricula to students with IEPs.
         Built with React/TypeScript + Python, integrating a local open-source LLM with RAG.
       </p>
@@ -54,10 +58,12 @@ I’m a Computer Science student at the University of Alberta focused on buildin
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>Telesat (Internship)</h3>
-      <p><b>May – Sept 2025</b> · Ottawa, Ontario</p>
-      <p>
-        Re-architected parts of a Constellation Capacity Management System using Java, TypeScript, and React.
+      <h3 style="margin-bottom: 6px;">Telesat (Internship)</h3>
+      <p style="margin-top: 0; margin-bottom: 10px;">
+        <sub><b>May – Sept 2025</b> · Ottawa, Ontario</sub>
+      </p>
+      <p style="margin-top: 10px;">
+        Re-architected parts of a Constellation Capacity Management System using Java, TypeScript, and Angular.
         Worked in an Agile Scrum environment with code reviews, CI/CD, and Azure/JFrog-based workflows.
       </p>
       <p>
