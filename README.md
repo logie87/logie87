@@ -13,13 +13,16 @@
 </p>
 
 <p align="center">
-  <img alt="Java" src="https://img.shields.io/badge/Java-111?style=flat&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-111?style=flat&logo=typescript&logoColor=white" />
-  <img alt="Python" src="https://img.shields.io/badge/Python-111?style=flat&logo=python&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/React-111?style=flat&logo=react&logoColor=white" />
-  <img alt="Azure" src="https://img.shields.io/badge/Azure-111?style=flat&logo=microsoftazure&logoColor=white" />
-  <img alt="Git" src="https://img.shields.io/badge/Git-111?style=flat&logo=git&logoColor=white" />
+  <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=buymeacoffee&logoColor=white" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=111" />
+  <img alt="Azure" src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white" />
+  <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white" />
+  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
 </p>
+
+
 
 ---
 
