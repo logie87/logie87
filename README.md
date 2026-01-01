@@ -7,7 +7,7 @@
 <p align="center">
   <a href="mailto:lhindley@ualberta.com"><b>Email</b></a>
   &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/loganhindley/"><b>LinkedIn</b></a>
+  <a href="https://www..com/in/loganhindley/"><b></b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/logie87"><b>GitHub</b></a>
 </p>
