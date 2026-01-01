@@ -45,7 +45,7 @@ export default function Navbar() {
       <div className="nav">
         <button className="brand" onClick={() => go("top")} aria-label="Go to top">
           <span className="brandDot" />
-          <span className="brandText">portfolio</span>
+          <span className="brandText">Logan Hindley</span>
         </button>
 
         <div className="navLinks">
