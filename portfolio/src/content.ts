@@ -24,7 +24,7 @@ export const content = {
   title: "Software / Systems / Caffeine Engineer",
   location: "Edmonton, AB",
   tagline:
-    "I build whatever comes to mind, usually slightly over-engineered fixes to problems — with an obsession for UX dark mode variants.",
+    "I build whatever comes to mind, usually slightly over-engineered fixes to problems as well as adding dark mode to everything.",
   links: {
     github: "https://github.com/logie87",
     linkedin: "https://www.linkedin.com/in/loganhindley/",

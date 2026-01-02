@@ -295,6 +295,7 @@ interface DitherProps {
 }
 
 export default function Dither({
+  className,
   waveSpeed = 0.4,
   waveFrequency = 3,
   waveAmplitude = 0.5,
@@ -307,6 +308,7 @@ export default function Dither({
 }: DitherProps) {
 return (
   <Canvas
+    className={className}
     camera={{ position: [0, 0, 6] }}
     dpr={1}
     gl={{ antialias: true, alpha: true }}
@@ -318,8 +320,6 @@ return (
       height: "100vh",
       zIndex: 1,
       pointerEvents: "none",
-      opacity: 0.22,          // start visible; you can lower later
-      mixBlendMode: "soft-light",
     }}
   >
     <DitheredWaves
