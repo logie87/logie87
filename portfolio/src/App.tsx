@@ -7,7 +7,7 @@ import SkillsGrid from "./components/SkillsGrid.tsx";
 import Dither from "./components/Dither.tsx";
 import GradientText from './components/GradientText.tsx'  
 import TextType from "./components/TextType.tsx";
-import { content } from "./content.tsx";
+import { content } from "./content";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
 export default function App() {
