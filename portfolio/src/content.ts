@@ -41,6 +41,8 @@ export const content = {
   about: [
     "I like building products that feel good to use. Preferably things that solve real problems I didn't create.",
     "Currently a student + software dev + videographer. I (for some reason) enjoy mindless debugging over coffee as well as leading large projects.",
+    "Always seeking new connections and looking for opportunities to learn. If you want to connect, send me a message! I am always up for a coffee chat, and always looking for new events and competitions to take part in!",
+    "Thanks for stopping by!",
   ],
 
   skills: [
@@ -72,7 +74,7 @@ export const content = {
         {
           title: "Synth UI tooling",
           blurb: "TypeScript & C providing live telemetry visuals.",
-          href: "#project-audio-synthesizer-telemetry-and-embedded-ui-project",
+          href: "https://github.com/logie87/audiosynth",
         },
       ],
     },

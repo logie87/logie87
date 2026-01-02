@@ -6,6 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 import SkillsGrid from "./components/SkillsGrid";
 import Dither from "./components/Dither";
 import GradientText from './components/GradientText'  
+import TextType from "./components/TextType";
 import { content } from "./content";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
@@ -73,8 +74,28 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.12 }}
           >
-            {content.title}
+            <TextType
+              as="span"
+              className="titleType"
+              text={[
+                "Computer Science Student",
+                "Software Engineer",
+                "Videographer",
+                "Caffeine Addict",
+                "Tech Enthusiast",
+                "Builder of Things",
+              ]}
+              smartDelete
+              loop
+              pauseDuration={1800}
+              initialDelay={250}
+              typingSpeed={80}
+              deletingSpeed={55}
+              variableSpeed={{ min: 30, max: 100 }}
+              cursorCharacter="▎"
+            />
           </motion.h2>
+
 
           <motion.p
             className="tagline"
@@ -133,7 +154,7 @@ export default function App() {
             </div>
             <div className="card">
               <p className="p muted">
-                Those buzzwords, i.e what I have experience with
+                Those buzzwords, i.e what I have experience with.
               </p>
               <SkillsGrid skills={content.skills} />
             </div>

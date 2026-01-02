@@ -585,3 +585,7 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   opacity: 0.85;
 }
 
+.titleType{
+  display: inline;
+  white-space: nowrap;
+}
