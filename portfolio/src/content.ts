@@ -189,7 +189,7 @@ export const content = {
       blurb:
         "This site. Built with Vite + TS + motion. Designed to be easy to iterate on and super animated and whatnot.",
       tags: ["Vite", "React", "Framer Motion"],
-      links: [{ label: "Github", href: "https://logie87.github.io/logie87/" }],
+      links: [{ label: "Github", href: "https://github.com/logie87/logie87" }],
     },
   ] as Project[],
 };
