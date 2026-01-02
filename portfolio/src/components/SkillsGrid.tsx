@@ -74,8 +74,11 @@ export default function SkillsGrid({ skills }: { skills: Skill[] }) {
               />
               <div className="skillText">
                 <div className="skillLabel">{s.label}</div>
-                {(s as any).highlights?.length ? (
-                  <div className="skillHint muted">Click The Icon for More</div>
+
+                {s.tagline ? (
+                  <div className="skillHint muted">{s.tagline}</div>
+                ) : (s as any).highlights?.length ? (
+                  <div className="skillHint muted">Click the icon</div>
                 ) : null}
               </div>
             </div>

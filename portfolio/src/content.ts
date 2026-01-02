@@ -22,6 +22,7 @@ export type Skill = {
     | "cicd"
     | "azure"
     | "jfrog";
+    tagline?: string;
   highlights?: SkillHighlight[];
 };
 
@@ -49,6 +50,7 @@ export const content = {
     {
       label: "React",
       key: "react",
+      tagline: "Built Interactive UIs focusing on modularity.",
       highlights: [
         {
           title: "Instructive (nathacks)",
@@ -70,6 +72,7 @@ export const content = {
     {
       label: "TypeScript",
       key: "typescript",
+      tagline: "Worked on large scale unqiue projects.",
       highlights: [
         {
           title: "Portfolio (Vite + TS)",
@@ -77,7 +80,7 @@ export const content = {
           href: "https://github.com/logie87",
         },
         {
-          title: "Synth UI tooling",
+          title: "Synth UI Visuals",
           blurb: "TypeScript & C providing live telemetry visuals.",
           href: "https://github.com/logie87/audiosynth",
         },
@@ -86,6 +89,7 @@ export const content = {
     {
       label: "C / C++",
       key: "cpp",
+      tagline: "Designed intricate applications.",
       highlights: [
         {
           title: "AudioSynth Telemetry Layer",
@@ -102,6 +106,7 @@ export const content = {
     {
       label: "Java",
       key: "java",
+      tagline: "Focusing on SWE level coding practices.",
       highlights: [
         {
           title: "Seat Sorter",
@@ -118,6 +123,7 @@ export const content = {
     {
       label: "Git",
       key: "git",
+      tagline: "Experience with Git CLI, GitHub, and GitLab.",
       highlights: [
         {
           title: "GitHub Profile",
@@ -134,6 +140,7 @@ export const content = {
     {
       label: "CI/CD",
       key: "cicd",
+      tagline: "Learning how to integrate with others.",
       highlights: [
         {
           title: "All of my Projects",
@@ -150,6 +157,7 @@ export const content = {
     {
       label: "Microsoft Azure",
       key: "azure",
+      tagline: "Learning how to deploy to existing applications.",
       highlights: [
         {
           title: "2025 Telesat Software Engineer Intern",
@@ -161,6 +169,7 @@ export const content = {
     {
       label: "JFrog",
       key: "jfrog",
+      tagline: "Centralizing artifacts for longevity",
       highlights: [
         {
           title: "2025 Telesat Software Engineer Intern",
