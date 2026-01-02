@@ -5,7 +5,6 @@
   flex: 0 0 auto;
 }
 
-/* lift above neighboring cards when open */
 .skillStack.open{
   z-index: 30;
 }
@@ -29,8 +28,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  pointer-events: none;
   z-index: 40;
+  pointer-events: none;
 }
 
 .skillStack.open .skillStackCards{
@@ -41,32 +40,27 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 10%);
   width: 240px;
-  padding: 12px 12px;
+  padding: 12px;
   border-radius: 16px;
 
-  /* OPAQUE, not see-through */
-  background: linear-gradient(
-    180deg,
-    rgba(18, 20, 19, 0.98),
-    rgba(10, 12, 11, 0.98)
-  );
+  background: linear-gradient(180deg, rgba(18,20,19,1), rgba(10,12,11,1));
   border: 1px solid rgba(255,255,255,0.14);
   box-shadow: 0 18px 55px rgba(0,0,0,0.55);
 
   color: rgba(255,255,255,0.92);
   text-decoration: none;
 
-  transition: transform 0.25s ease, opacity 0.25s ease;
   opacity: 0;
+  transform: translate(-50%, 10%);
+  transition: transform 0.25s ease, opacity 0.25s ease, filter 0.18s ease;
+  will-change: transform;
 }
 
 .skillStack.open .skillStackCard{
   opacity: 1;
 }
 
-/* Spread cards further so they don't overlap */
 .skillStack.open .card-1{
   transform:
     translate(calc(-50% - 220px), calc(-50% - 110px))
@@ -88,27 +82,24 @@
     translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
 }
 
-.tack.open .skillStackCard:hover{
+.skillStack.open .skillStackCard:hover{
   border-color: rgba(255,255,255,0.22);
+  filter: brightness(1.05);
 }
 
 .skillStackCardTitle{
   font-weight: 720;
   letter-spacing: -0.01em;
-  margin-bottom: 6px;
+  margin: 0 0 6px;
 }
 
 .skillStackCardBlurb{
   color: rgba(255,255,255,0.72);
   line-height: 1.45;
-
   display: -webkit-box;
   -webkit-box-orient: vertical;
-
-  /* standard + prefixed for compatibility */
-  line-clamp: 2;
   -webkit-line-clamp: 2;
-
+  line-clamp: 2;
   overflow: hidden;
 }
 
