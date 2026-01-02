@@ -58,11 +58,11 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   position: fixed;
   inset: 0;
   background: url("../public/atdesk1.jpg") center/cover no-repeat;
-  opacity: 0.10;
+  opacity: 0.15;
   mix-blend-mode: luminosity;
   pointer-events: none;
   z-index: -1;
-  filter: contrast(1.05) saturate(0.8) brightness(0.75);
+  filter: contrast(0.5) saturate(0.9) brightness(0.95);
 }
 
 .main{

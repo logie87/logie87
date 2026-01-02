@@ -29,11 +29,11 @@ export default function App() {
       <div style={{ width: "100%", position: "relative" }}>
         <Dither
           className="ditherBg"
-          mouseRadius={0.5}
+          mouseRadius={0.4}
           colorNum={4.9}
-          waveAmplitude={0.36}
-          waveFrequency={1.6}
-          waveSpeed={0.06}
+          waveAmplitude={0.26}
+          waveFrequency={0.6}
+          waveSpeed={0.2}
           waveColor={[0.36, 0.44, 0.38]}
         />
       </div>
