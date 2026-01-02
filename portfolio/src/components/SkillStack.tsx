@@ -21,6 +21,20 @@ export default function SkillStack({
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
 
+  // should lift card to top
+  useEffect(() => {
+    const root = rootRef.current;
+    const card = root?.closest(".skillCard--stack");
+    if (!card) return;
+
+    if (open) card.classList.add("skillCard--open");
+    else card.classList.remove("skillCard--open");
+
+    return () => {
+      card.classList.remove("skillCard--open");
+    };
+  }, [open]);
+
   useEffect(() => {
     if (!open) return;
 
@@ -33,7 +47,6 @@ export default function SkillStack({
       if (!root) return;
 
       const path = (typeof e.composedPath === "function" ? e.composedPath() : []) as EventTarget[];
-
       const clickedInside =
         path.length > 0 ? path.includes(root) : root.contains(e.target as Node);
 
@@ -51,17 +64,12 @@ export default function SkillStack({
 
   const onMove = (e: React.MouseEvent<HTMLElement>) => {
     if (!open) return;
-
     const el = e.currentTarget as HTMLElement;
     const rect = el.getBoundingClientRect();
     const cx = rect.left + rect.width / 2;
     const cy = rect.top + rect.height / 2;
-
-    const x = (e.clientX - cx) * 0.1;
-    const y = (e.clientY - cy) * 0.1;
-
-    el.style.setProperty("--magnet-x", `${x}px`);
-    el.style.setProperty("--magnet-y", `${y}px`);
+    el.style.setProperty("--magnet-x", `${(e.clientX - cx) * 0.1}px`);
+    el.style.setProperty("--magnet-y", `${(e.clientY - cy) * 0.1}px`);
   };
 
   const onLeave = (e: React.MouseEvent<HTMLElement>) => {
@@ -100,6 +108,8 @@ export default function SkillStack({
               onClick={() => setOpen(false)}
               onMouseMove={onMove}
               onMouseLeave={onLeave}
+              tabIndex={open ? 0 : -1}
+              aria-hidden={!open}
             >
               <div className="skillStackCardTitle">{item.title}</div>
               <div className="skillStackCardBlurb">{item.blurb}</div>

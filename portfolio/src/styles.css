@@ -573,6 +573,10 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
 .skillCard--stack{
   position: relative;
   overflow: visible;
+  z-index: 0;
+}
+.skillCard--open{
+  z-index: 120;
 }
 
 .skillHint{

@@ -6,7 +6,6 @@
 }
 
 .skillStack.open{
-  z-index: 40;
   pointer-events: auto;
 }
 
@@ -25,12 +24,12 @@
 }
 
 .skillStackCards{
+  pointer-events: none;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 40;
-  pointer-events: auto;
 }
 
 
@@ -49,14 +48,18 @@
   color: rgba(255,255,255,0.92);
   text-decoration: none;
 
+  visibility: hidden;
+  pointer-events: none;
+
   opacity: 0;
   transform: translate(-50%, 10%);
   transition: transform 0.25s ease, opacity 0.25s ease, filter 0.18s ease;
   will-change: transform;
 }
-
 .skillStack.open .skillStackCard{
   opacity: 0.95;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .skillStack.open .card-1{ /* Left Card */

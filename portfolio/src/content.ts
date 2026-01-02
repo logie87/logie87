@@ -106,7 +106,7 @@ export const content = {
     {
       label: "Java",
       key: "java",
-      tagline: "Focusing on SWE level coding practices.",
+      tagline: "Focusing on SWE level coding practice and OOP.",
       highlights: [
         {
           title: "Seat Sorter",
@@ -123,7 +123,7 @@ export const content = {
     {
       label: "Git",
       key: "git",
-      tagline: "Experience with Git CLI, GitHub, and GitLab.",
+      tagline: "Experience with Git CLI, GitHub, and GitLab in Scrum.",
       highlights: [
         {
           title: "GitHub Profile",
@@ -140,7 +140,7 @@ export const content = {
     {
       label: "CI/CD",
       key: "cicd",
-      tagline: "Learning how to integrate with others.",
+      tagline: "Learning how to integrate with others on large projects.",
       highlights: [
         {
           title: "All of my Projects",
@@ -157,7 +157,7 @@ export const content = {
     {
       label: "Microsoft Azure",
       key: "azure",
-      tagline: "Learning how to deploy to existing applications.",
+      tagline: "Designing new deployment functionality for CI/CD.",
       highlights: [
         {
           title: "2025 Telesat Software Engineer Intern",
@@ -169,7 +169,7 @@ export const content = {
     {
       label: "JFrog",
       key: "jfrog",
-      tagline: "Centralizing artifacts for longevity",
+      tagline: "Centralizing artifacts from tons of repositories.",
       highlights: [
         {
           title: "2025 Telesat Software Engineer Intern",
