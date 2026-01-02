@@ -115,7 +115,7 @@ export default function App() {
             <a className="btn primary" href="#projects">
               See projects
             </a>
-            <a className="btn" href="#contact">
+            <a className="btn primary" href="#contact">
               Contact →
             </a>
 
