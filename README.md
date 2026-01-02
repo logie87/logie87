@@ -7,9 +7,12 @@
 <p align="center">
   <a href="mailto:lhindley@ualberta.com"><b>Email</b></a>
   &nbsp;·&nbsp;
-  <a href="https://www..com/in/loganhindley/"><b></b></a>
+  <a href="https://www.linkedin.com/in/loganhindley/"><b>LinkedIn</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/logie87"><b>GitHub</b></a>
+</p>
+<p align="center"> 
+  <a href="https://logie87.github.io/logie87/"><b>My Portfolio (Check it out!)</b></a>
 </p>
 
 
@@ -21,6 +24,7 @@
   <img alt="Azure" src="https://img.shields.io/badge/Azure-Cloud-0078D4?style=flat&logo=microsoftazure&logoColor=white&v=2" />
   <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white" />
   <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+  <img alt="JFrog" src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
 </p>
 
 ---
