@@ -1,28 +1,45 @@
 import { motion, useReducedMotion, type Transition } from "framer-motion";
 import type { Project } from "../content";
-import Reveal from "./reveal/reveal";
-import { ArrowUpRight } from "lucide-react";
+import Reveal from "./reveal/Reveal";
+import { ArrowUpRight, Sparkles, Cpu, Radio, Blocks, GraduationCap, Wrench } from "lucide-react";
+import {
+  SiFramer,
+  SiPython,
+  SiReact,
+  SiTypescript,
+  SiVite,
+  SiNodedotjs,
+} from "react-icons/si";
 
-type TechMeta = { key: string; label: string; iconText: string; iconClass: string };
-
-const TECH: Record<string, TechMeta> = {
-  c: { key: "c", label: "C", iconText: "C", iconClass: "chipIcon--c" },
-  react: { key: "react", label: "React", iconText: "⚛", iconClass: "chipIcon--react" },
-  typescript: { key: "typescript", label: "TypeScript", iconText: "TS", iconClass: "chipIcon--typescript" },
-  node: { key: "node", label: "Node", iconText: "N", iconClass: "chipIcon--node" },
-  "c#": { key: "csharp", label: "C#", iconText: "C#", iconClass: "chipIcon--csharp" },
-  python: { key: "python", label: "Python", iconText: "Py", iconClass: "chipIcon--python" },
+type TagMeta = {
+  icon: React.ComponentType<{ className?: string }>;
+  accent: string; // css class for color
 };
 
-function techKey(tag: string) {
-  const t = tag.trim().toLowerCase();
-  if (t === "c") return "c";
-  if (t === "react") return "react";
-  if (t === "ts" || t === "typescript") return "typescript";
-  if (t === "node" || t === "node.js" || t === "nodejs") return "node";
-  if (t === "c#" || t === "csharp") return "c#";
-  if (t === "python") return "python";
-  return null;
+function norm(tag: string) {
+  return tag.trim().toLowerCase();
+}
+
+function tagMeta(tag: string): TagMeta {
+  const t = norm(tag);
+
+  // Brand / common tech
+  if (t === "react") return { icon: SiReact, accent: "tagIcon--react" };
+  if (t === "typescript" || t === "ts") return { icon: SiTypescript, accent: "tagIcon--typescript" };
+  if (t === "vite") return { icon: SiVite, accent: "tagIcon--vite" };
+  if (t === "framer motion" || t === "framer") return { icon: SiFramer, accent: "tagIcon--framer" };
+  if (t.includes("python")) return { icon: SiPython, accent: "tagIcon--python" };
+  if (t === "node" || t === "node.js" || t === "nodejs") return { icon: SiNodedotjs, accent: "tagIcon--node" };
+
+  // Your custom vibe tags
+  if (t === "c" || t === "c/c++" || t.includes("c++")) return { icon: Wrench, accent: "tagIcon--c" };
+  if (t === "pcbs" || t === "pcb" || t.includes("pcb")) return { icon: Cpu, accent: "tagIcon--pcb" };
+  if (t.includes("telemetry") || t.includes("protocol")) return { icon: Radio, accent: "tagIcon--telemetry" };
+  if (t.includes("modular")) return { icon: Blocks, accent: "tagIcon--modular" };
+  if (t.includes("education")) return { icon: GraduationCap, accent: "tagIcon--edu" };
+
+  // Default for anything else (still gets an icon!)
+  return { icon: Sparkles, accent: "tagIcon--default" };
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
@@ -43,12 +60,14 @@ export default function ProjectCard({ project }: { project: Project }) {
 
         <div className="chips">
           {project.tags.map((t) => {
-            const key = techKey(t);
-            const meta = key ? TECH[key] : null;
+            const meta = tagMeta(t);
+            const Icon = meta.icon;
 
             return (
               <span key={t} className="chip">
-                {meta && <span className={`chipIcon ${meta.iconClass}`}>{meta.iconText}</span>}
+                <span className={`tagIcon ${meta.accent}`}>
+                  <Icon className="tagSvg" />
+                </span>
                 {t}
               </span>
             );

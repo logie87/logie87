@@ -1,5 +1,4 @@
 :root{
-  /* Core palette: matte charcoal + walnut + muted plant greens */
   --bg: #070807;
   --bg2: #0b0e0c;
   --panel: rgba(255,255,255,0.06);
@@ -26,7 +25,6 @@ html { scroll-behavior: smooth; }
 body{
   margin:0;
   background:
-    /* subtle “room light” */
     radial-gradient(1200px 800px at 15% 10%, rgba(127,159,122,0.12), transparent 60%),
     radial-gradient(900px 700px at 85% 20%, rgba(106,74,47,0.16), transparent 55%),
     radial-gradient(900px 700px at 55% 92%, rgba(70,110,90,0.10), transparent 55%),
@@ -41,7 +39,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
 
 .app{ position: relative; min-height: 100%; }
 
-/* Glow: tuned down + greener + warmer */
 .glowBackdrop{
   position: fixed;
   inset: 0;
@@ -73,7 +70,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   z-index: 1;
 }
 
-/* Reduce gaps between sections */
 .section{
   padding: 56px 18px;
 }
@@ -93,7 +89,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   background: linear-gradient(90deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
 }
 
-/* Hero: slightly tighter than before */
 .hero{
   padding-top: 96px;
   padding-bottom: 54px;
@@ -226,7 +221,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
 
 .card{
   background:
-    /* walnut warmth near top */
     radial-gradient(900px 260px at 0% 0%, rgba(106,74,47,0.16), transparent 60%),
     linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
   border: 1px solid rgba(255,255,255,0.10);
@@ -248,7 +242,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   margin: 12px 0;
 }
 
-/* Chips (base) */
 .chips{
   display:flex;
   flex-wrap: wrap;
@@ -280,7 +273,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   border: 1px solid rgba(255,255,255,0.14);
 }
 
-/* Tech color accents */
 .chipIcon--c{ background: rgba(60,140,255,0.22); color: rgba(210,235,255,0.95); }
 .chipIcon--react{ background: rgba(80,200,255,0.18); color: rgba(220,250,255,0.92); }
 .chipIcon--typescript{ background: rgba(65,155,255,0.18); color: rgba(225,245,255,0.92); }
@@ -288,7 +280,43 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
 .chipIcon--csharp{ background: rgba(190,120,255,0.16); color: rgba(245,230,255,0.92); }
 .chipIcon--python{ background: rgba(255,220,120,0.12); color: rgba(255,245,220,0.92); }
 
-/* Projects grid */
+/* Tag icons inside the chips */
+.tagIcon{
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+}
+
+/* react-icons */
+.tagSvg{
+  width: 14px;
+  height: 14px;
+  opacity: 0.95;
+}
+
+/* Color accents */
+.tagIcon--default{ background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.88); }
+
+.tagIcon--react{ background: rgba(80,200,255,0.16); color: rgba(230,250,255,0.95); }
+.tagIcon--typescript{ background: rgba(65,155,255,0.16); color: rgba(230,245,255,0.95); }
+.tagIcon--vite{ background: rgba(255,220,120,0.14); color: rgba(255,245,220,0.95); }
+
+.tagIcon--framer{ background: rgba(190,120,255,0.14); color: rgba(245,230,255,0.95); }
+.tagIcon--python{ background: rgba(90,170,255,0.14); color: rgba(235,245,255,0.95); }
+.tagIcon--node{ background: rgba(120,220,140,0.14); color: rgba(235,255,240,0.95); }
+
+.tagIcon--pcb{ background: rgba(127,159,122,0.14); color: rgba(235,255,240,0.95); }
+.tagIcon--telemetry{ background: rgba(106,74,47,0.16); color: rgba(255,245,235,0.95); }
+.tagIcon--modular{ background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.92); }
+.tagIcon--edu{ background: rgba(127,159,122,0.12); color: rgba(235,255,240,0.95); }
+.tagIcon--c{ background: rgba(60,140,255,0.18); color: rgba(230,245,255,0.95); }
+
+
 .projects{
   display:grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -348,7 +376,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   flex-wrap: wrap;
 }
 
-/* Footer tighter */
 .footer{
   max-width: var(--max);
   margin: 0 auto;
@@ -359,7 +386,6 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-/* NAV */
 .navWrap{
   position: sticky;
   top: 0;
@@ -468,3 +494,79 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   .menuBtn{ display:block; }
 }
 
+.skillsGrid{
+  margin-top: 10px;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 520px){
+  .skillsGrid{ grid-template-columns: 1fr; }
+}
+
+.skillCard{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+
+  padding: 12px 12px;
+  border-radius: 16px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(10px);
+
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+
+.skillCard:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.16);
+}
+
+.skillIcon{
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* accent variants */
+.skillIcon--blue{
+  background: rgba(70,150,255,0.18);
+  color: rgba(225,245,255,0.95);
+}
+.skillIcon--cyan{
+  background: rgba(80,220,255,0.14);
+  color: rgba(225,250,255,0.95);
+}
+.skillIcon--green{
+  background: rgba(120,220,140,0.14);
+  color: rgba(230,255,235,0.95);
+}
+.skillIcon--sky{
+  background: rgba(110,180,255,0.14);
+  color: rgba(225,245,255,0.95);
+}
+.skillIcon--purple{
+  background: rgba(190,120,255,0.14);
+  color: rgba(245,230,255,0.95);
+}
+.skillIcon--amber{
+  background: rgba(255,200,120,0.12);
+  color: rgba(255,245,220,0.95);
+}
+
+.skillLabel{
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.2;
+}

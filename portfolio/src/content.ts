@@ -5,6 +5,20 @@ export type Project = {
   links: { label: string; href: string }[];
 };
 
+export type Skill = {
+  label: string;
+  key:
+    | "typescript"
+    | "react"
+    | "java"
+    | "git"
+    | "c"
+    | "cpp"
+    | "cicd"
+    | "azure"
+    | "jfrog";
+};
+
 export const content = {
   name: "Logan Hindley",
   title: "Software / Systems / Caffeine Engineer",
@@ -14,23 +28,23 @@ export const content = {
   links: {
     github: "https://github.com/logie87",
     linkedin: "https://www.linkedin.com/in/loganhindley/",
-    email: "mailto:lhindley@ualberta.cca",
-    resume: "#", // to add when i upload it
+    email: "mailto:lhindley@ualberta.ca",
+    resume: "#", // to add when you upload it
   },
 
   about: [
     "I like building products that feel good to use. Preferably things that solve real problems I didn't create.",
-    "Currently: student + software dev + videographer. I (for some reason) enjoy mindless debugging over coffee as well as leading large projects.",
+    "Currently a student + software dev + videographer. I (for some reason) enjoy mindless debugging over coffee as well as leading large projects.",
   ],
 
   skills: [
-    "TypeScript / React",
-    "Java",
-    "C / C++",
-    "Git & CI/CD",
-    "Microsoft Azure",
-    "JFrog Artifactory & Pipelines",
-  ],
+    { label: "TypeScript / React", key: "typescript" },
+    { label: "Java", key: "java" },
+    { label: "C / C++", key: "cpp" },
+    { label: "Git & CI/CD", key: "cicd" },
+    { label: "Microsoft Azure", key: "azure" },
+    { label: "JFrog Artifactory & Pipelines", key: "jfrog" },
+  ] as Skill[],
 
   projects: [
     {
@@ -46,8 +60,8 @@ export const content = {
     {
       title: "Audio Synthesizer + Telemetry and Embedded UI Project",
       blurb:
-        "A modular audio synthesizer, with live telemetry + command protocol layer with clean scheduling and debug tooling. Software in C + Typescript. Hardware in modular PCBs",
-      tags: ["C", "PCBs", "Typescript", "Modular Hardware", "Live Telemetry and Data Protocols"],
+        "A modular audio synthesizer, with live telemetry + command protocol layer with clean scheduling and debug tooling. Software in C + TypeScript. Hardware in modular PCBs.",
+      tags: ["C", "PCBs", "TypeScript", "Modular Hardware", "Live Telemetry and Data Protocols"],
       links: [{ label: "See the progress!", href: "https://github.com/logie87/audiosynth" }],
     },
     {
@@ -55,7 +69,7 @@ export const content = {
       blurb:
         "This site. Built with Vite + TS + motion. Designed to be easy to iterate on and super animated and whatnot.",
       tags: ["Vite", "React", "Framer Motion"],
-      links: [{ label: "Live", href: "https://github.com/logie87/logie87" }],
+      links: [{ label: "Github", href: "https://logie87.github.io/logie87/" }],
     },
   ] as Project[],
 };

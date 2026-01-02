@@ -1,9 +1,10 @@
 import { useMemo } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import Navbar from "./components/navbar.tsx";
-import Section from "./components/section.tsx";
-import ProjectCard from "./components/projectcard.tsx";
-import GlowBackdrop from "./components/glowback";
+import Navbar from "./components/Navbar";
+import Section from "./components/Section";
+import ProjectCard from "./components/ProjectCard";
+import GlowBackdrop from "./components/GlowBack";
+import SkillsGrid from "./components/SkillsGrid";
 import { content } from "./content";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
@@ -110,16 +111,10 @@ export default function App() {
                 </p>
               ))}
             </div>
-            <div className="card">
-              <p className="muted">Those buzzwords, i.e what I have experience with</p>
-              <div className="chips">
-                {content.skills.map((s) => (
-                  <span key={s} className="chip">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
+              <div className="card">
+                <p className="p muted">Those buzzwords, i.e what I have experience with</p>
+                <SkillsGrid skills={content.skills} />
+              </div>  
           </div>
         </Section>
 
