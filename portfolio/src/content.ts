@@ -60,6 +60,11 @@ export const content = {
           blurb: "Iterating on motion + interactions (like this popup).",
           href: "https://github.com/logie87/",
         },
+        {
+          title: "My Portfolio",
+          blurb: "Iterating on motion + interactions (like this popup).",
+          href: "https://github.com/logie87/",
+        },
       ],
     },
     {

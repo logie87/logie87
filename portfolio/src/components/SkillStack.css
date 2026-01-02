@@ -6,7 +6,8 @@
 }
 
 .skillStack.open{
-  z-index: 30;
+  z-index: 40;
+  pointer-events: auto;
 }
 
 .skillStackBtn{
@@ -29,20 +30,17 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 40;
-  pointer-events: none;
-}
-
-.skillStack.open .skillStackCards{
   pointer-events: auto;
 }
+
 
 .skillStackCard{
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 240px;
+  width: 260px;
   padding: 12px;
-  border-radius: 16px;
+  border-radius: 12px;
 
   background: linear-gradient(180deg, rgba(18,20,19,1), rgba(10,12,11,1));
   border: 1px solid rgba(255,255,255,0.14);
@@ -58,39 +56,38 @@
 }
 
 .skillStack.open .skillStackCard{
-  opacity: 1;
+  opacity: 0.95;
 }
 
-.skillStack.open .card-1{
+.skillStack.open .card-1{ /* Left Card */
   transform:
-    translate(calc(-50% - 220px), calc(-50% - 110px))
+    translate(calc(-50% - 130px), calc(-50% - 110px))
     rotate(-8deg)
-    translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
+    translate(var(--magnet-x, 10px), var(--magnet-y, 10px));
 }
 
-.skillStack.open .card-2{
+.skillStack.open .card-2{ /* Right Card */
   transform:
-    translate(calc(-50% + 40px), calc(-50% - 140px))
+    translate(calc(-50% + 150px), calc(-20% - 140px))
     rotate(7deg)
-    translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
+    translate(var(--magnet-x, 10px), var(--magnet-y, 10px));
 }
 
-.skillStack.open .card-3{
+.skillStack.open .card-3{ /* Top Card */
   transform:
-    translate(calc(-50% - 60px), calc(-50% - 200px))
-    rotate(2deg)
-    translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
+    translate(calc(-50% + 10px), calc(-50% - 235px))
+    translate(var(--magnet-x, 10px), var(--magnet-y, 10px));
 }
 
 .skillStack.open .skillStackCard:hover{
-  border-color: rgba(255,255,255,0.22);
+  border-color: rgba(255,255,255,5);
   filter: brightness(1.05);
 }
 
 .skillStackCardTitle{
   font-weight: 720;
   letter-spacing: -0.01em;
-  margin: 0 0 6px;
+  margin: 0 0 4px;
 }
 
 .skillStackCardBlurb{
@@ -106,6 +103,6 @@
 .skillStackCardLink{
   margin-top: 10px;
   font-size: 12px;
-  color: rgba(255,255,255,0.78);
+  color: #5983f4c7;
   letter-spacing: 0.02em;
 }
