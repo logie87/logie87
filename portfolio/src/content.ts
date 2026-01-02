@@ -58,7 +58,7 @@ export const content = {
         {
           title: "My Portfolio",
           blurb: "Iterating on motion + interactions (like this popup).",
-          href: "#project-this-portfolio",
+          href: "https://logie87.github.io/logie87/",
         },
       ],
     },
@@ -69,7 +69,7 @@ export const content = {
         {
           title: "Portfolio (Vite + TS)",
           blurb: "Tons of interactive yet modular components.",
-          href: "#project-this-portfolio",
+          href: "https://logie87.github.io/logie87/",
         },
         {
           title: "Synth UI tooling",
