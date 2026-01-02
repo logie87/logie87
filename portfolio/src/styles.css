@@ -302,6 +302,7 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
   gap: 12px;
+  grid-auto-rows: 1fr;
   align-items: stretch;
 }
 @media (max-width: 860px){
@@ -326,18 +327,7 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
 }
 
 .projectCard{
-  border-radius: var(--radius);
-  padding: 16px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background:
-    radial-gradient(900px 260px at 0% 0%, rgba(127,159,122,0.14), transparent 58%),
-    radial-gradient(900px 260px at 100% 0%, rgba(106,74,47,0.14), transparent 58%),
-    rgba(255,255,255,0.035);
-  backdrop-filter: blur(10px);
-  display:flex;
-  flex-direction: column;
-  gap: 12px;
-  min-height: 180px;
+  height: 100%;l
 }
 .projectTop .p{ margin-top: 8px; }
 

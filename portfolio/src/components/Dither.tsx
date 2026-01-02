@@ -295,7 +295,7 @@ interface DitherProps {
 }
 
 export default function Dither({
-  className,
+  className = "ditherBg",
   waveSpeed = 0.4,
   waveFrequency = 3,
   waveAmplitude = 0.5,
@@ -306,34 +306,30 @@ export default function Dither({
   enableMouseInteraction = true,
   mouseRadius = 0.8,
 }: DitherProps) {
-return (
-  <Canvas
-    className={className}
-    camera={{ position: [0, 0, 6] }}
-    dpr={1}
-    gl={{ antialias: true, alpha: true }}
-    onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
-    style={{
-      position: "fixed",
-      inset: 0,
-      width: "100vw",
-      height: "100vh",
-      zIndex: 1,
-      pointerEvents: "none",
-    }}
-  >
-    <DitheredWaves
-      waveSpeed={waveSpeed}
-      waveFrequency={waveFrequency}
-      waveAmplitude={waveAmplitude}
-      waveColor={waveColor}
-      colorNum={colorNum}
-      pixelSize={pixelSize}
-      disableAnimation={disableAnimation}
-      enableMouseInteraction={enableMouseInteraction}
-      mouseRadius={mouseRadius}
-    />
-  </Canvas>
-);
-
+  return (
+    <div className={className}>
+      <Canvas
+        camera={{ position: [0, 0, 6] }}
+        dpr={1}
+        gl={{ antialias: true, alpha: true }}
+        onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <DitheredWaves
+          waveSpeed={waveSpeed}
+          waveFrequency={waveFrequency}
+          waveAmplitude={waveAmplitude}
+          waveColor={waveColor}
+          colorNum={colorNum}
+          pixelSize={pixelSize}
+          disableAnimation={disableAnimation}
+          enableMouseInteraction={enableMouseInteraction}
+          mouseRadius={mouseRadius}
+        />
+      </Canvas>
+    </div>
+  );
 }
