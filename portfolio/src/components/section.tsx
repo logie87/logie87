@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from "react";
-import Reveal from "./reveal/Reveal";
+import Reveal from "./reveal/Reveal.tsx";
 
 type Props = PropsWithChildren<{
   id: string;

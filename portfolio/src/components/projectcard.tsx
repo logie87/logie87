@@ -1,6 +1,6 @@
 import { motion, useReducedMotion, type Transition } from "framer-motion";
 import type { Project } from "../content";
-import Reveal from "./reveal/Reveal";
+import Reveal from "./reveal/Reveal.tsx";
 import { ArrowUpRight } from "lucide-react";
 
 type TechMeta = { key: string; label: string; iconText: string; iconClass: string };

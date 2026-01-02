@@ -1,13 +1,13 @@
 import { useMemo } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import Navbar from "./components/Navbar";
-import Section from "./components/Section";
-import ProjectCard from "./components/ProjectCard";
-import SkillsGrid from "./components/SkillsGrid";
-import Dither from "./components/Dither";
-import GradientText from './components/GradientText'  
-import TextType from "./components/TextType";
-import { content } from "./content";
+import Navbar from "./components/Navbar.tsx";
+import Section from "./components/Section.tsx";
+import ProjectCard from "./components/ProjectCard.tsx";
+import SkillsGrid from "./components/SkillsGrid.tsx";
+import Dither from "./components/Dither.tsx";
+import GradientText from './components/GradientText.tsx'  
+import TextType from "./components/TextType.tsx";
+import { content } from "./content.tsx";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
 export default function App() {

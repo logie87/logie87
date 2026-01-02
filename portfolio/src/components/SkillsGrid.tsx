@@ -9,7 +9,7 @@ import {
   Cloud,
   Package,
 } from "lucide-react";
-import Reveal from "./reveal/Reveal";
+import Reveal from "./reveal/Reveal.tsx";
 import SkillStack from "./SkillStack";
 
 function iconFor(key: Skill["key"]) {
