@@ -3,9 +3,9 @@
   inset: 0; 
   pointer-events:none; 
   z-index:1; 
-  mix-blend-mode: overlay;
+  mix-blend-mode: normal;
 }
 .ditherBg canvas{ 
-  opacity: 0.5; 
+  opacity: 0.3; 
   filter: saturate(0.9) contrast(1.05) brightness(0.85); 
 }
