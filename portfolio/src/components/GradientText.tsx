@@ -87,7 +87,7 @@ export default function GradientText({
 
   const gradientAngle =
     direction === 'horizontal' ? 'to right' : direction === 'vertical' ? 'to bottom' : 'to bottom right';
-  // Duplicate first color at the end for seamless looping
+  // Duplicate first color at the end
   const gradientColors = [...colors, colors[0]].join(', ');
 
   const gradientStyle = {

@@ -21,7 +21,6 @@ export default function SkillStack({
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
 
-  // Close on outside pointer + Escape (Safari-safe)
   useEffect(() => {
     if (!open) return;
 
@@ -33,7 +32,6 @@ export default function SkillStack({
       const root = rootRef.current;
       if (!root) return;
 
-      // composedPath is the most reliable across portals / SVG / Safari oddities
       const path = (typeof e.composedPath === "function" ? e.composedPath() : []) as EventTarget[];
 
       const clickedInside =
@@ -62,7 +60,6 @@ export default function SkillStack({
     const x = (e.clientX - cx) * 0.1;
     const y = (e.clientY - cy) * 0.1;
 
-    // No React state = no jitter.
     el.style.setProperty("--magnet-x", `${x}px`);
     el.style.setProperty("--magnet-y", `${y}px`);
   };

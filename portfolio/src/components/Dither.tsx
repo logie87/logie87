@@ -227,7 +227,7 @@ function DitheredWaves({
     }
   }, [size, gl]);
 
-  // Track mouse without blocking clicks (Canvas is pointer-events:none)
+  // Track mouse without blocking clicks
   useEffect(() => {
     if (!enableMouseInteraction) return;
 
