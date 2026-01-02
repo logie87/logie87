@@ -5,6 +5,7 @@ import Section from "./components/Section";
 import ProjectCard from "./components/ProjectCard";
 import SkillsGrid from "./components/SkillsGrid";
 import Dither from "./components/Dither";
+import GradientText from './components/GradientText'  
 import { content } from "./content";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
@@ -54,7 +55,16 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.05 }}
           >
-            {content.name}
+            <GradientText
+              colors={["#4f7a28", "#587a5d", "#ffffff", "#74a7fe", "#3a88fe"]}
+              animationSpeed={5}
+              direction="diagonal"
+              pauseOnHover
+              className="nameGradient"
+              showBorder={false}
+            >
+              {content.name}
+            </GradientText>
           </motion.h1>
 
           <motion.h2
@@ -85,7 +95,7 @@ export default function App() {
               See projects
             </a>
             <a className="btn" href="#contact">
-              Contact
+              Contact →
             </a>
 
             <div className="iconRow">

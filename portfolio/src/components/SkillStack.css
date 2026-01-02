@@ -1,0 +1,120 @@
+.skillStack{
+  position: relative;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+}
+
+/* lift above neighboring cards when open */
+.skillStack.open{
+  z-index: 30;
+}
+
+.skillStackBtn{
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  line-height: 0;
+}
+
+.skillStackBtn:disabled{
+  cursor: default;
+  opacity: 0.85;
+}
+
+.skillStackCards{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 40;
+}
+
+.skillStack.open .skillStackCards{
+  pointer-events: auto;
+}
+
+.skillStackCard{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 10%);
+  width: 240px;
+  padding: 12px 12px;
+  border-radius: 16px;
+
+  /* OPAQUE, not see-through */
+  background: linear-gradient(
+    180deg,
+    rgba(18, 20, 19, 0.98),
+    rgba(10, 12, 11, 0.98)
+  );
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 18px 55px rgba(0,0,0,0.55);
+
+  color: rgba(255,255,255,0.92);
+  text-decoration: none;
+
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  opacity: 0;
+}
+
+.skillStack.open .skillStackCard{
+  opacity: 1;
+}
+
+/* Spread cards further so they don't overlap */
+.skillStack.open .card-1{
+  transform:
+    translate(calc(-50% - 220px), calc(-50% - 110px))
+    rotate(-8deg)
+    translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
+}
+
+.skillStack.open .card-2{
+  transform:
+    translate(calc(-50% + 40px), calc(-50% - 140px))
+    rotate(7deg)
+    translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
+}
+
+.skillStack.open .card-3{
+  transform:
+    translate(calc(-50% - 60px), calc(-50% - 200px))
+    rotate(2deg)
+    translate(var(--magnet-x, 0px), var(--magnet-y, 0px));
+}
+
+.skillStack.open .skillStackCard:hover{
+  border-color: rgba(255,255,255,0.22);
+}
+
+.skillStackCardTitle{
+  font-weight: 720;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+.skillStackCardBlurb{
+  color: rgba(255,255,255,0.72);
+  line-height: 1.45;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  /* standard + prefixed for compatibility */
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+
+  overflow: hidden;
+}
+
+.skillStackCardLink{
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.78);
+  letter-spacing: 0.02em;
+}

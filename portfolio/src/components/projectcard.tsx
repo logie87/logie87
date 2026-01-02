@@ -25,6 +25,14 @@ function techKey(tag: string) {
   return null;
 }
 
+function slugify(input: string) {
+  return input
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")
+    .slice(0, 80);
+}
+
 export default function ProjectCard({ project }: { project: Project }) {
   const reduce = useReducedMotion();
 
@@ -33,9 +41,16 @@ export default function ProjectCard({ project }: { project: Project }) {
     ? undefined
     : { type: "spring", stiffness: 280, damping: 22 };
 
+  const id = `project-${slugify(project.title)}`;
+
   return (
     <Reveal>
-      <motion.div className="projectCard" whileHover={hoverAnim} transition={hoverTransition}>
+      <motion.div
+        id={id}
+        className="projectCard"
+        whileHover={hoverAnim}
+        transition={hoverTransition}
+      >
         <div className="projectTop">
           <h4 className="h4">{project.title}</h4>
           <p className="p muted">{project.blurb}</p>

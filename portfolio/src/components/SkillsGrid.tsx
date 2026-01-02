@@ -10,6 +10,7 @@ import {
   Package,
 } from "lucide-react";
 import Reveal from "./reveal/Reveal";
+import SkillStack from "./SkillStack";
 
 function iconFor(key: Skill["key"]) {
   switch (key) {
@@ -20,7 +21,6 @@ function iconFor(key: Skill["key"]) {
     case "java":
       return Coffee;
     case "c":
-      return Cpu;
     case "cpp":
       return Cpu;
     case "git":
@@ -37,7 +37,6 @@ function iconFor(key: Skill["key"]) {
 }
 
 function classFor(key: Skill["key"]) {
-  // maps to CSS accent classes
   switch (key) {
     case "typescript":
     case "react":
@@ -61,22 +60,28 @@ function classFor(key: Skill["key"]) {
 
 export default function SkillsGrid({ skills }: { skills: Skill[] }) {
   return (
-    <div className="skillsGrid">
-      {skills.map((s) => {
-        const Icon = iconFor(s.key);
-        return (
-          <Reveal key={s.label}>
-            <div className="skillCard">
-              <div className={`skillIcon ${classFor(s.key)}`}>
-                <Icon size={18} />
-              </div>
+    <Reveal>
+      <div className="skillsGrid">
+        {skills.map((s) => {
+          const Icon = iconFor(s.key);
+          return (
+            <div key={`${s.key}-${s.label}`} className="skillCard skillCard--stack">
+              <SkillStack
+                label={s.label}
+                icon={<Icon size={18} />}
+                accentClass={classFor(s.key)}
+                items={(s as any).highlights ?? []}
+              />
               <div className="skillText">
                 <div className="skillLabel">{s.label}</div>
+                {(s as any).highlights?.length ? (
+                  <div className="skillHint muted">click the icon</div>
+                ) : null}
               </div>
             </div>
-          </Reveal>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </Reveal>
   );
 }

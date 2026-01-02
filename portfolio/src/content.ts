@@ -5,6 +5,11 @@ export type Project = {
   links: { label: string; href: string }[];
 };
 
+export type SkillHighlight = { 
+  title: string; 
+  blurb: string; 
+  href: string };
+
 export type Skill = {
   label: string;
   key:
@@ -17,6 +22,7 @@ export type Skill = {
     | "cicd"
     | "azure"
     | "jfrog";
+  highlights?: SkillHighlight[];
 };
 
 export const content = {
@@ -24,12 +30,12 @@ export const content = {
   title: "Software / Systems / Caffeine Engineer",
   location: "Edmonton, AB",
   tagline:
-    "I build whatever comes to mind, usually slightly over-engineered fixes to problems as well as adding dark mode to everything.",
+    "I build whatever comes to mind, usually slightly over-engineered fixes to problems and adding dark modes to everything.",
   links: {
     github: "https://github.com/logie87",
     linkedin: "https://www.linkedin.com/in/loganhindley/",
     email: "mailto:lhindley@ualberta.ca",
-    resume: "#", // to add when you upload it
+    resume: "https://docs.google.com/document/d/1OWb428YVy725HeaPIZVizyFydH1pgBG0jaVzwGHzuhQ/edit?usp=sharing", // to add when you upload it
   },
 
   about: [
@@ -38,12 +44,124 @@ export const content = {
   ],
 
   skills: [
-    { label: "TypeScript / React", key: "typescript" },
-    { label: "Java", key: "java" },
-    { label: "C / C++", key: "cpp" },
-    { label: "Git & CI/CD", key: "cicd" },
-    { label: "Microsoft Azure", key: "azure" },
-    { label: "JFrog Artifactory & Pipelines", key: "jfrog" },
+    {
+      label: "React",
+      key: "react",
+      highlights: [
+        {
+          title: "Instructive (nathacks)",
+          blurb: "Led this project and assisted UI development.",
+          href: "https://devpost.com/software/instructive",
+        },
+        {
+          title: "My Portfolio",
+          blurb: "Iterating on motion + interactions (like this popup).",
+          href: "#project-this-portfolio",
+        },
+      ],
+    },
+    {
+      label: "TypeScript",
+      key: "typescript",
+      highlights: [
+        {
+          title: "Portfolio (Vite + TS)",
+          blurb: "Tons of interactive yet modular components.",
+          href: "#project-this-portfolio",
+        },
+        {
+          title: "Synth UI tooling",
+          blurb: "TypeScript & C providing live telemetry visuals.",
+          href: "#project-audio-synthesizer-telemetry-and-embedded-ui-project",
+        },
+      ],
+    },
+    {
+      label: "C / C++",
+      key: "cpp",
+      highlights: [
+        {
+          title: "AudioSynth Telemetry Layer",
+          blurb: "Low-level scheduling + command/telemetry protocols.",
+          href: "https://github.com/logie87/audiosynth",
+        },
+        {
+          title: "CMPUT 201 uAlberta",
+          blurb: "Dedicated C course focused on systems programming.",
+          href: "https://apps.ualberta.ca/catalogue/course/cmput/201",
+        },
+      ],
+    },
+    {
+      label: "Java",
+      key: "java",
+      highlights: [
+        {
+          title: "Seat Sorter",
+          blurb: "Built a seat assignment algorithm for restaurants.",
+          href: "https://github.com/logie87/seatsorter",
+        },
+        {
+          title: "2025 Telesat Software Engineer Intern",
+          blurb: "Numerous bug fixes, testing, and work with Java + Maven.",
+          href: "https://www.telesat.com",
+        },
+      ],
+    },
+    {
+      label: "Git",
+      key: "git",
+      highlights: [
+        {
+          title: "GitHub Profile",
+          blurb: "All projects + My Beautiful Green Chart",
+          href: "https://github.com/logie87",
+        },
+        {
+          title: "Telesat LEO Software Engineer Intern",
+          blurb: "Summer 2025 - Worked on a Scrum team practicing CI/CD",
+          href: "https://www.telesat.com",
+        },
+      ],
+    },
+    {
+      label: "CI/CD",
+      key: "cicd",
+      highlights: [
+        {
+          title: "All of my Projects",
+          blurb: "Honing the essentials.",
+          href: "https://github.com/logie87",
+        },
+        {
+          title: "Telesat LEO Software Engineer Intern",
+          blurb: "Summer 2025 - Daily bug fixing in large codebases.",
+          href: "https://www.telesat.com",
+        },
+      ],
+    },
+    {
+      label: "Microsoft Azure",
+      key: "azure",
+      highlights: [
+        {
+          title: "2025 Telesat Software Engineer Intern",
+          blurb: "Implemented new deployment functionality to Azure nodes",
+          href: "https://www.telesat.com",
+        },
+      ],
+    },
+    {
+      label: "JFrog",
+      key: "jfrog",
+      highlights: [
+        {
+          title: "2025 Telesat Software Engineer Intern",
+          blurb: "Centralized local Maven artifacts to Artifactory.",
+          href: "https://www.telesat.com",
+        },
+      ],
+    },
   ] as Skill[],
 
   projects: [
@@ -58,7 +176,7 @@ export const content = {
       ],
     },
     {
-      title: "Audio Synthesizer + Telemetry and Embedded UI Project",
+      title: "Audio Synthesizer + Telemetry Visualizer Project",
       blurb:
         "A modular audio synthesizer, with live telemetry + command protocol layer with clean scheduling and debug tooling. Software in C + TypeScript. Hardware in modular PCBs.",
       tags: ["C", "PCBs", "TypeScript", "Modular Hardware", "Live Telemetry and Data Protocols"],
