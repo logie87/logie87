@@ -4,6 +4,6 @@
     pointer-events:none; 
     z-index:1; }
 .ditherBg canvas{ 
-    opacity: 0.18; 
+    opacity: 0.58; 
     mix-blend-mode: soft-light; 
     filter: saturate(0.9) contrast(1.05) brightness(0.85); }

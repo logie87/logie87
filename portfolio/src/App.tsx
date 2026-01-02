@@ -3,7 +3,6 @@ import { motion, useReducedMotion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import ProjectCard from "./components/ProjectCard";
-import GlowBackdrop from "./components/GlowBack";
 import SkillsGrid from "./components/SkillsGrid";
 import Dither from "./components/Dither";
 import { content } from "./content";
@@ -24,7 +23,6 @@ export default function App() {
 
   return (
     <div className="app">
-      <GlowBackdrop />
       <Navbar />
       <div style={{ width: "100%", position: "relative" }}>
         <Dither
