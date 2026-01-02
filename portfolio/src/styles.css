@@ -46,19 +46,24 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   z-index: 0;
   --gx: 50vw;
   --gy: 30vh;
+
   background:
-    radial-gradient(680px 460px at var(--gx) var(--gy), rgba(127,159,122,0.18), transparent 60%),
-    radial-gradient(560px 420px at calc(var(--gx) + 160px) calc(var(--gy) + 80px), rgba(106,74,47,0.16), transparent 62%),
-    radial-gradient(520px 380px at calc(var(--gx) - 170px) calc(var(--gy) + 120px), rgba(80,122,94,0.12), transparent 62%);
-  filter: blur(1px);
-  opacity: 0.75;
+    radial-gradient(380px 260px at var(--gx) var(--gy),
+      rgba(127,159,122,0.14), transparent 70%),
+    radial-gradient(320px 240px at calc(var(--gx) + 110px) calc(var(--gy) + 55px),
+      rgba(106,74,47,0.13), transparent 70%),
+    radial-gradient(300px 220px at calc(var(--gx) - 120px) calc(var(--gy) + 85px),
+      rgba(80,122,94,0.11), transparent 70%);
+
+  filter: blur(12px) saturate(1.25) contrast(1.05);
+  opacity: 0.62;
 }
 .glowBackdrop:after{
   content:"";
   position: fixed;
   inset: 0;
   background: url("../public/atdesk1.jpg") center/cover no-repeat;
-  opacity: 0.15;
+  opacity: 0.3;
   mix-blend-mode: luminosity;
   pointer-events: none;
   z-index: -1;
