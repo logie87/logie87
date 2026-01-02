@@ -5,6 +5,7 @@ import Section from "./components/Section";
 import ProjectCard from "./components/ProjectCard";
 import GlowBackdrop from "./components/GlowBack";
 import SkillsGrid from "./components/SkillsGrid";
+import Dither from "./components/Dither";
 import { content } from "./content";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
@@ -25,6 +26,17 @@ export default function App() {
     <div className="app">
       <GlowBackdrop />
       <Navbar />
+      <div style={{ width: "100%", position: "relative" }}>
+        <Dither
+          className="ditherBg"
+          mouseRadius={0.5}
+          colorNum={4.9}
+          waveAmplitude={0.36}
+          waveFrequency={1.6}
+          waveSpeed={0.06}
+          waveColor={[0.36, 0.44, 0.38]}
+        />
+      </div>
 
       <main className="main">
         {/* HERO */}
@@ -111,10 +123,12 @@ export default function App() {
                 </p>
               ))}
             </div>
-              <div className="card">
-                <p className="p muted">Those buzzwords, i.e what I have experience with</p>
-                <SkillsGrid skills={content.skills} />
-              </div>  
+            <div className="card">
+              <p className="p muted">
+                Those buzzwords, i.e what I have experience with
+              </p>
+              <SkillsGrid skills={content.skills} />
+            </div>
           </div>
         </Section>
 
@@ -131,16 +145,27 @@ export default function App() {
         <Section id="contact" title="Contact">
           <div className="card contactCard">
             <p className="p">
-              Want to build something together, or point out flaws in my work (please)?
+              Want to build something together, or point out flaws in my work
+              (please)?
             </p>
             <div className="contactRow">
               <a className="btn primary" href={content.links.email}>
                 Email me
               </a>
-              <a className="btn" href={content.links.github} target="_blank" rel="noreferrer">
+              <a
+                className="btn"
+                href={content.links.github}
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub
               </a>
-              <a className="btn" href={content.links.linkedin} target="_blank" rel="noreferrer">
+              <a
+                className="btn"
+                href={content.links.linkedin}
+                target="_blank"
+                rel="noreferrer"
+              >
                 LinkedIn
               </a>
             </div>
@@ -148,8 +173,12 @@ export default function App() {
         </Section>
 
         <footer className="footer">
-          <span className="muted">© {new Date().getFullYear()} {"Logan Hindley"}</span>
-          <a className="muted" href="#top">Back to top ↑</a>
+          <span className="muted">
+            © {new Date().getFullYear()} {"Logan Hindley"}
+          </span>
+          <a className="muted" href="#top">
+            Back to top ↑
+          </a>
         </footer>
       </main>
     </div>
