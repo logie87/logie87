@@ -9,7 +9,7 @@ import {
   Cloud,
   Package,
 } from "lucide-react";
-import Reveal from "./reveal/Reveal.tsx";
+import { motion, useReducedMotion } from "framer-motion";
 import SkillStack from "./SkillStack";
 
 function iconFor(key: Skill["key"]) {
@@ -59,8 +59,16 @@ function classFor(key: Skill["key"]) {
 }
 
 export default function SkillsGrid({ skills }: { skills: Skill[] }) {
+  const reduce = useReducedMotion();
+
   return (
-    <Reveal>
+    <motion.div
+      // Always ends visible; no chance of "stuck hidden on refresh"
+      initial={reduce ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={reduce ? { duration: 0 } : { duration: 0.45, ease: "easeOut" }}
+      style={{ willChange: "opacity, transform" }}
+    >
       <div className="skillsGrid">
         {skills.map((s) => {
           const Icon = iconFor(s.key);
@@ -85,6 +93,6 @@ export default function SkillsGrid({ skills }: { skills: Skill[] }) {
           );
         })}
       </div>
-    </Reveal>
+    </motion.div>
   );
 }
