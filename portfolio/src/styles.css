@@ -589,3 +589,13 @@ code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liber
   display: inline;
   white-space: nowrap;
 }
+
+.pageWipe {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 39;         /* above content */
+  pointer-events: none;
+  transform: translateX(110%);
+  will-change: transform;
+}
