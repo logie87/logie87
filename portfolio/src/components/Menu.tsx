@@ -1,4 +1,3 @@
-// Menu.tsx
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import "./menu.css";
@@ -22,7 +21,6 @@ export interface StaggeredMenuProps {
   displaySocials?: boolean;
   displayItemNumbering?: boolean;
   className?: string;
-  logoUrl?: string;
   menuButtonColor?: string;
   openMenuButtonColor?: string;
   accentColor?: string;
@@ -32,7 +30,6 @@ export interface StaggeredMenuProps {
   onMenuClose?: () => void;
   isFixed?: boolean;
 
-  // IMPORTANT: App passes this so we can do SPA routing + wipe
   onItemSelect?: (link: string) => void;
 }
 
@@ -44,7 +41,6 @@ const StaggeredMenu = ({
   displaySocials = true,
   displayItemNumbering = true,
   className,
-  logoUrl = "/src/assets/logos/reactbits-gh-white.svg",
   menuButtonColor = "#fff",
   openMenuButtonColor = "#fff",
   changeMenuColorOnOpen = true,
@@ -327,7 +323,7 @@ const StaggeredMenu = ({
 
       const inner = panel.querySelector(".sm-panel-inner") as HTMLElement | null;
 
-      // We want the menu to "continue left", so we slide it off the opposite side.
+      // opposite way slide
       const exitX = position === "left" ? 110 : -110;
       const resetOffscreen = position === "left" ? -100 : 100;
       const all: HTMLElement[] = [...layers, panel];
@@ -342,7 +338,6 @@ const StaggeredMenu = ({
           gsap.set([panel, pre], { clearProps: "width" });
           if (inner) gsap.set(inner, { clearProps: "opacity" });
 
-          // hide menu back offscreen (ready for next open)
           gsap.set(all, { xPercent: resetOffscreen });
 
           // flip state closed
