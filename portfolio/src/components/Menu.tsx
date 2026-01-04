@@ -404,7 +404,7 @@ const StaggeredMenu = ({
       <header className="staggered-menu-header" aria-label="Main navigation header">
         <div className="sm-logo" aria-label="Logo">
             <img
-            src="public/logo256.png"
+            src={`${import.meta.env.BASE_URL}logo256.png`}
             alt="Logo"
             className="sm-logo-img"
             draggable={false}
